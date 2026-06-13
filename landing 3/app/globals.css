@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: #f2f1e8;
+  color: #111110;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+  /* pow-style parenthesised section label */
+  .paren {
+    @apply inline-flex items-center gap-1.5 font-display text-sm font-semibold tracking-tight text-muted;
+  }
+  .paren::before { content: "("; @apply text-lime; }
+  .paren::after { content: ")"; @apply text-lime; }
+
+  /* lime highlight block behind words, pow-style */
+  .hl {
+    @apply rounded-[0.2em] bg-lime px-[0.18em] text-ink;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-bold text-paper transition-all duration-200 hover:-translate-y-0.5 hover:bg-lime hover:text-ink;
+  }
+  .btn-lime {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-lime px-6 py-3 text-sm font-bold text-ink transition-transform duration-200 hover:-translate-y-0.5;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink/25 px-6 py-3 text-sm font-bold text-ink transition-colors duration-200 hover:border-ink hover:bg-ink hover:text-paper;
+  }
+  .card {
+    @apply rounded-xl2 border border-line bg-card p-7 transition-all duration-300;
+  }
+  .display-tight {
+    @apply font-display font-extrabold tracking-[-0.02em];
+  }
+}
+
+/* thin tick / barcode-style divider, pow-inspired */
+.ticks {
+  background-image: repeating-linear-gradient(90deg, currentColor 0 1px, transparent 1px 7px);
+  height: 14px;
+  opacity: 0.5;
+}
+
+.reveal { opacity: 0; transform: translateY(20px); }
+.reveal.is-visible { animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal, .reveal.is-visible { opacity: 1; transform: none; animation: none; }
+  .animate-marquee { animation: none; }
+}
