@@ -3,7 +3,7 @@ import Image from "next/image";
 const cols = [
   { title: "Servicios", links: ["Consultoría 360", "UX & CRO", "Paid Media", "Social Media", "Email Marketing", "Diseño Gráfico"] },
   { title: "Empresa", links: ["Nosotros", "Método", "Casos", "FAQ"] },
-  { title: "Contacto", links: ["WhatsApp", "+54 9 11 6059-1946", "Agendar llamada"] },
+  { title: "Contacto", links: ["WhatsApp"] },
 ];
 
 export default function Footer() {
