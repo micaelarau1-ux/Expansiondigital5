@@ -2,11 +2,11 @@ import Reveal from "./Reveal";
 
 const pains = [
   "Pagás por servicios que no terminás de entender.",
-  "Te hablan en difícil y quedás afuera de tu propio negocio.",
+  "Te hablan en "difícil" y quedás afuera de tu propio negocio.",
   "Presupuestos pensados para grandes marcas, no para tu etapa.",
   "Reportes con métricas que no se traducen en ventas.",
   "Soluciones genéricas que no contemplan tu rubro.",
-  "Te entregan un informe y desaparecen.",
+  "Sentís que no crece tu negocio, ni tu conocimiento.",
 ];
 
 export default function Problem() {
