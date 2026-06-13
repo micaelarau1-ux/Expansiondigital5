@@ -30,7 +30,7 @@ export default function Nav() {
           ))}
         </ul>
 
-        <a href="#contacto" className="hidden btn-primary md:inline-flex">
+        <a href="https://wa.me/5491160591946" target="_blank" rel="noopener noreferrer" className="hidden btn-primary md:inline-flex">
           Hablemos →
         </a>
 
@@ -58,7 +58,7 @@ export default function Nav() {
                 {l.label}
               </a>
             ))}
-            <a href="#contacto" onClick={() => setOpen(false)} className="btn-primary mt-2">
+            <a href="https://wa.me/5491160591946" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} className="btn-primary mt-2">
               Hablemos →
             </a>
           </div>

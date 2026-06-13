@@ -1,10 +1,11 @@
 import Reveal from "./Reveal";
 
 const values = [
-  { title: "Nos adaptamos a tu presupuesto", body: "Armamos el alcance según lo que podés invertir hoy.", icon: "◐" },
-  { title: "Cercanos y accesibles", body: "Te explicamos todo en simple y estás siempre al tanto.", icon: "✦" },
-  { title: "Te acompañamos", body: "Caminamos el proceso con vos, no entregamos y desaparecemos.", icon: "→" },
-  { title: "Decisiones con datos", body: "Todo se mide, y vos lo ves en resultados.", icon: "▲" },
+  { title: "Nos adaptamos a tu presupuesto", body: "Armamos el alcance según lo que podés invertir hoy, sin fees fijos inflados.", icon: "◐" },
+  { title: "Cercanos y accesibles", body: 'Te explicamos todo en "simple" y estás siempre al tanto.', icon: "✦" },
+  { title: "Te guiamos y acompañamos", body: "No entregamos un informe y desaparecemos; caminamos el proceso con vos.", icon: "→" },
+  { title: "Nos gusta capacitar", body: "Que tu equipo sepa más es el punto de partida para escalar.", icon: "✚" },
+  { title: "Decisiones con datos y métricas", body: "Todo lo que hacemos se mide, y vos lo ves.", icon: "▲" },
 ];
 
 export default function Values() {
@@ -17,7 +18,7 @@ export default function Values() {
         </h2>
       </Reveal>
 
-      <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {values.map((v, i) => (
           <Reveal key={v.title} delay={i * 90}>
             <div className="card h-full hover:-translate-y-1 hover:border-ink">

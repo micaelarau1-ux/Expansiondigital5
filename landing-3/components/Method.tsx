@@ -13,7 +13,7 @@ export default function Method() {
       <Reveal>
         <p className="paren">04 — Proceso</p>
         <h2 className="mt-5 max-w-2xl display-tight text-4xl leading-[1.02] text-ink sm:text-5xl">
-          Un método claro, sin humo.
+          Un método claro, todo a la vista.
         </h2>
       </Reveal>
 

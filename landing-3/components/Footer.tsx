@@ -1,7 +1,33 @@
-const cols = [
-  { title: "Servicios", links: ["Consultoría 360", "UX & CRO", "Paid Media", "Social Media", "Email Marketing", "Diseño Gráfico"] },
-  { title: "Empresa", links: ["Nosotros", "Método", "Casos", "FAQ"] },
-  { title: "Contacto", links: ["WhatsApp", "+54 9 11 6059-1946", "Agendar llamada"] },
+type FooterLink = { label: string; href: string; external?: boolean };
+type FooterCol = { title: string; links: FooterLink[] };
+
+const cols: FooterCol[] = [
+  {
+    title: "Servicios",
+    links: [
+      { label: "Consultoría 360", href: "#servicios" },
+      { label: "UX & CRO", href: "#servicios" },
+      { label: "Paid Media", href: "#servicios" },
+      { label: "Social Media", href: "#servicios" },
+      { label: "Email Marketing", href: "#servicios" },
+      { label: "Diseño Gráfico", href: "#servicios" },
+    ],
+  },
+  {
+    title: "Empresa",
+    links: [
+      { label: "Nosotros", href: "#nosotros" },
+      { label: "Método", href: "#metodo" },
+      { label: "Casos", href: "#casos" },
+      { label: "FAQ", href: "#faq" },
+    ],
+  },
+  {
+    title: "Contacto",
+    links: [
+      { label: "WhatsApp", href: "https://wa.me/5491160591946", external: true },
+    ],
+  },
 ];
 
 export default function Footer() {
@@ -18,8 +44,14 @@ export default function Footer() {
               <h4 className="display-tight text-sm uppercase tracking-wide text-ink">{c.title}</h4>
               <ul className="mt-4 space-y-2.5">
                 {c.links.map((l) => (
-                  <li key={l}>
-                    <a href="#contacto" className="text-sm text-muted transition-colors hover:text-ink">{l}</a>
+                  <li key={l.label}>
+                    <a
+                      href={l.href}
+                      {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                      className="text-sm text-muted transition-colors hover:text-ink"
+                    >
+                      {l.label}
+                    </a>
                   </li>
                 ))}
               </ul>

@@ -46,7 +46,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3 animate-fade-up" style={{ animationDelay: "240ms" }}>
-            <a href="#contacto" className="btn-lime">Quiero crecer →</a>
+            <a href="https://wa.me/5491160591946" target="_blank" rel="noopener noreferrer" className="btn-lime">Quiero crecer →</a>
             <a href="#servicios" className="btn-ghost">Ver servicios</a>
           </div>
         </div>
