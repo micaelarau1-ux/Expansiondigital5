@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const cols = [
   { title: "Servicios", links: ["Consultoría 360", "UX & CRO", "Paid Media", "Social Media", "Email Marketing", "Diseño Gráfico"] },
   { title: "Empresa", links: ["Nosotros", "Método", "Casos", "FAQ"] },
@@ -32,12 +34,20 @@ export default function Footer() {
         </div>
       </div>
 
-      <a
+      
         href="https://wa.me/5491160591946"
+        target="_blank"
+        rel="noopener noreferrer"
         aria-label="Hablar por WhatsApp"
-        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-lime text-2xl text-ink shadow-[0_12px_30px_-8px_rgba(0,0,0,0.4)] transition-transform hover:scale-105"
+        className="fixed bottom-6 right-6 z-50 transition-transform hover:scale-105"
       >
-        ✆
+        <Image
+          src="/WhatsApp_icon.png"
+          alt="WhatsApp"
+          width={56}
+          height={56}
+          className="h-14 w-14 rounded-full shadow-[0_12px_30px_-8px_rgba(0,0,0,0.4)]"
+        />
       </a>
     </footer>
   );
