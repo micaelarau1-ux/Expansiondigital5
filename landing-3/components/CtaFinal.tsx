@@ -14,9 +14,6 @@ export default function CtaFinal() {
           </p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
             <a href="https://wa.me/5491160591946" className="btn-lime">Hablemos por WhatsApp →</a>
-            <a href="https://wa.me/5491160591946" className="inline-flex items-center justify-center gap-2 rounded-full border border-paper/25 px-6 py-3 text-sm font-bold text-paper transition-colors hover:bg-paper hover:text-ink">
-              +54 9 11 6059-1946
-            </a>
           </div>
         </div>
       </Reveal>
