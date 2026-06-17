@@ -21,7 +21,7 @@ export default function About() {
             <p>Somos un equipo de especialistas que se suma al tuyo. Sin capas de cuentas ni estructuras que encarecen todo.</p>
             <p>Trabajamos cerca, hablamos claro y decidimos con datos. Que tu negocio crezca, y que entiendas cómo.</p>
           </div>
-          <a href="https://wa.me/5491160591946" target="_blank" rel="noopener noreferrer" className="btn-primary mt-8">Conocé cómo trabajamos →</a>
+          <a href="#contacto" target="_blank" rel="noopener noreferrer" className="btn-primary mt-8">Conocé cómo trabajamos →</a>
         </Reveal>
 
         <Reveal delay={120}>
