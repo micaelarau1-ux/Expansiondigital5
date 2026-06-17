@@ -1,6 +1,5 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
-import Stats from "@/components/Stats";
 import Logos from "@/components/Logos";
 import Problem from "@/components/Problem";
 import Values from "@/components/Values";
@@ -18,7 +17,6 @@ export default function Page() {
       <Nav />
       <main>
         <Hero />
-        <Stats />
         <Logos />
         <Problem />
         <Values />
