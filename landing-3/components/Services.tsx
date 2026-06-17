@@ -29,9 +29,7 @@ export default function Services() {
           {services.map((s, i) => (
             <Reveal key={s.name} delay={(i % 3) * 90}>
               <a
-                href="https://wa.me/5491160591946"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#contacto"
                 className="card group flex h-full flex-col hover:-translate-y-1 hover:border-ink"
               >
                 <div className="flex items-center justify-between">
