@@ -1,6 +1,5 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
-import Logos from "@/components/Logos";
 import Problem from "@/components/Problem";
 import Values from "@/components/Values";
 import Services from "@/components/Services";
@@ -17,7 +16,6 @@ export default function Page() {
       <Nav />
       <main>
         <Hero />
-        <Logos />
         <Problem />
         <Values />
         <Services />
