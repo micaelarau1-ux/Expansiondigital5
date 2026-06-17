@@ -11,9 +11,6 @@ const services = [
   { name: "Consultoría 360", desc: "Mirada integral de tu negocio: estrategia, canales y números en un solo plan.", group: "Estrategia" },
   { name: "UX & CRO", desc: "Más ventas con el mismo tráfico, optimizando la experiencia de compra.", group: "Tecnología" },
   { name: "Paid Media", desc: "Campañas que se pagan solas, con foco en retorno, no en gastar.", group: "Crecimiento" },
-  { name: "Social Media", desc: "Contenido que construye marca y comunidad alrededor de tu negocio.", group: "Crecimiento" },
-  { name: "Email Marketing", desc: "El canal más rentable, bien aprovechado con flujos y automatizaciones.", group: "Crecimiento" },
-  { name: "Diseño Gráfico", desc: "Identidad y piezas visuales que comunican y venden.", group: "Marca" },
 ];
 
 export default function Services() {
