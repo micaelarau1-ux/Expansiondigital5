@@ -1,4 +1,4 @@
-const tags = ["Consultoría 360", "Paid Media", "UX & CRO", "Social Media", "Email", "Diseño"];
+const tags = ["Consultoría de negocio 360", "Paid Media", "UX & CRO", "Métricas", "Diseño"];
 const marquee = ["Sumamos talento a tu equipo", "Crecé con datos", "Sin ser una agencia"];
 
 export default function Hero() {
