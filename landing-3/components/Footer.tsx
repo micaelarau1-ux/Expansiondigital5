@@ -8,9 +8,6 @@ const cols: FooterCol[] = [
       { label: "Consultoría 360", href: "#servicios" },
       { label: "UX & CRO", href: "#servicios" },
       { label: "Paid Media", href: "#servicios" },
-      { label: "Social Media", href: "#servicios" },
-      { label: "Email Marketing", href: "#servicios" },
-      { label: "Diseño Gráfico", href: "#servicios" },
     ],
   },
   {
