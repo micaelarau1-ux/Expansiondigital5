@@ -21,7 +21,7 @@ const cols: FooterCol[] = [
   {
     title: "Contacto",
     links: [
-      { label: "WhatsApp", href: "https://wa.me/5491160591946", external: true },
+      { label: "WhatsApp", href: "#contacto" },
     ],
   },
 ];
