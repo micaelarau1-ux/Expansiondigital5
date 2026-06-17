@@ -42,7 +42,7 @@ export default function Cases() {
           <h2 className="mt-5 max-w-2xl display-tight text-4xl leading-[1.02] text-ink sm:text-5xl">
             Casos que <span className="hl">hablan solos.</span>
           </h2>
-          <p className="mt-4 text-sm text-muted">* Reemplazá por tus casos reales o testimonios.</p>
+          <p className="mt-4 text-sm text-muted">*.</p>
         </Reveal>
 
         <div className="mt-12 grid gap-5 lg:grid-cols-3">
