@@ -46,7 +46,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3 animate-fade-up" style={{ animationDelay: "240ms" }}>
-            <a href="#contacto" target="_blank" rel="noopener noreferrer" className="btn-lime">Quiero crecer →</a>
+            <a href="#contacto" className="btn-lime">Quiero crecer →</a>
             <a href="#servicios" className="btn-ghost">Ver servicios</a>
           </div>
         </div>
@@ -58,7 +58,7 @@ export default function Hero() {
             <ul className="mt-5 space-y-1">
               {tags.map((t) => (
                 <li key={t} className="border-b border-paper/10 last:border-0">
-                  
+                  <a
                     href="#servicios"
                     className="group flex items-center justify-between py-3"
                   >
