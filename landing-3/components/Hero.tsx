@@ -57,12 +57,14 @@ export default function Hero() {
             <span className="paren !text-paper/60">Lo que hacemos</span>
             <ul className="mt-5 space-y-1">
               {tags.map((t) => (
-                <li
-                  key={t}
-                  className="group flex items-center justify-between border-b border-paper/10 py-3 last:border-0"
-                >
-                  <span className="display-tight text-xl">{t}</span>
-                  <span className="text-lime transition-transform group-hover:translate-x-1">→</span>
+                <li key={t} className="border-b border-paper/10 last:border-0">
+                  
+                    href="#servicios"
+                    className="group flex items-center justify-between py-3"
+                  >
+                    <span className="display-tight text-xl">{t}</span>
+                    <span className="text-lime transition-transform group-hover:translate-x-1">→</span>
+                  </a>
                 </li>
               ))}
             </ul>
