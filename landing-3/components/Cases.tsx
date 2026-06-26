@@ -49,7 +49,7 @@ const CASES: Case[] = [
     metrics: [
       { kind: "count", prefix: "~", value: 70, suffix: "%", label: "Open Rate alcanzado" },
       { kind: "text", display: "0 → 5%", label: "Tasa de conversión" },
-      { kind: "text", display: "↑ Tráfico", label: "A nb.com.ar" },
+      { kind: "text", display: "↑ Tráfico" },
     ],
   },
   {
@@ -211,11 +211,11 @@ export default function Cases() {
         </p>
 
         <h2 className="mt-4 max-w-3xl font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
-          Marcas reales, <span className="text-lime">resultados medibles.</span>
+          Marcas reales,resultados medibles.
         </h2>
 
         <p className="mt-6 max-w-2xl text-lg text-paper/70">
-          Esto es lo que logramos cuando nos sumamos a un equipo: todo medido, todo a la vista.
+          Esto es lo que logramos cuando nos sumamos a un equipo.
         </p>
 
         <div className="mt-16 grid gap-6 md:grid-cols-2">
