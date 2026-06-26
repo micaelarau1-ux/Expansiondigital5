@@ -4,6 +4,7 @@ import Problem from "@/components/Problem";
 import Values from "@/components/Values";
 import Services from "@/components/Services";
 import Method from "@/components/Method";
+import Cases from "@/components/Cases";
 import About from "@/components/About";
 import Faq from "@/components/Faq";
 import CtaFinal from "@/components/CtaFinal";
@@ -19,6 +20,7 @@ export default function Page() {
         <Values />
         <Services />
         <Method />
+        <Cases />
         <About />
         <Faq />
         <CtaFinal />
