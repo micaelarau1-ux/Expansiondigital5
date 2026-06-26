@@ -49,7 +49,7 @@ const CASES: Case[] = [
     metrics: [
       { kind: "count", prefix: "~", value: 70, suffix: "%", label: "Open Rate alcanzado" },
       { kind: "text", display: "0 → 5%", label: "Tasa de conversión" },
-      { kind: "text", display: "↑ Tráfico" },
+      { kind: "text", display: "↑ Tráfico", label: "A la web de New Balance" },
     ],
   },
   {
@@ -211,7 +211,7 @@ export default function Cases() {
         </p>
 
         <h2 className="mt-4 max-w-3xl font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
-          Marcas reales, <span className="text-lime">resultados medibles.</span>
+          Marcas reales, resultados medibles.
         </h2>
 
         <p className="mt-6 max-w-2xl text-lg text-paper/70">
